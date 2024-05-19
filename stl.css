@@ -1,0 +1,110 @@
+body{
+    background-image: url("https://i.pinimg.com/736x/50/71/12/507112417926d28ff9b2255b43530ea1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #67DA79;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 100;
+    font-style: normal;
+}
+.gridContainer{
+    display: grid;
+    grid-gap: 10px 20px;
+    grid-template-rows: 100px 1fr auto;
+    grid-template-columns: 1fr 200px;
+    grid-template-areas: "header  header"
+                         "section aside "
+                         "section2 aside"
+                         "footer  footer ";
+}
+
+header{
+    position: static;
+    grid-area: header;
+    border-style: dashed;
+    border-color: rgb(255, 255, 255);
+
+}
+
+nav{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    border-style: dashed;
+    border-color: rgb(255, 255, 255);
+
+    li{
+        color: white;
+        background-color: rgb(29, 196, 54);
+        display: inline;
+        border-radius: 2px;
+        padding: 8px;
+    }
+    li:hover{
+        color: black;
+        background-color: rgb(6, 68, 18);
+    }
+
+}
+
+section{
+    grid-area: section;
+    border-style: dashed;
+    border-color: rgb(255, 255, 255);
+
+    h1, h4{
+        margin-left: 10px;
+    }
+
+    h4{
+        color: rgb(39, 211, 26);
+    }
+}
+
+
+.section2{
+    grid-area: section2;
+    border-style: dashed;
+    border-color: rgb(255, 255, 255);
+}
+
+aside{
+    grid-area: aside;
+    height: 49%;
+    border-style: dashed;
+    border-color: rgb(255, 255, 255);
+    
+    li{
+        font-size:10px;
+    }
+    img{
+        margin-top: 10px;
+        height: 190px;
+        width: 190px;
+    }
+}
+
+footer{
+    display:flex;
+    grid-area: footer;
+    border-style: dashed;
+    border-color: rgb(255, 255, 255);
+    
+}
+
+.classFooter{
+    align-content: center;
+    margin-right: auto;
+    margin-left: 10px;
+    
+}
+
+article{
+    border-style: dashed;
+    border-color: rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
